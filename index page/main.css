@@ -1,0 +1,169 @@
+.{
+    margin: 0;
+    padding: 0;
+    font-family:Black Ops One;
+    font-family: 'Audiowide', cursive;
+    list-style: none;
+
+}
+.header{
+    min-height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(4,9,30,0,7 ), rgba(4,9,30,0,7)), url() ;
+background-image: url(./pic.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+div.jhar{
+text-align: center;
+text-decoration: none;
+color: aqua;
+}
+
+.logo{
+    width: 200px;
+    float:left;
+    animation: float 4s linear infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        box-shadow: 0 5px 15px 0px 
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(5, 1, 37, 0.2);
+        transform: translatey(-20px);
+    }
+}
+
+
+nav{
+    display: flex;
+
+align-items: center;
+justify-content: space-between;
+padding: 1% 4%;
+}
+
+nav a{
+    color: #fff;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+
+nav a span{
+    color: yellow;
+    
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+.nav-links ul li a{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+
+.nav-links ul li a::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0%;
+    background: #f1f111;
+    transition: .6s;
+
+
+}
+.nav-links ul li a:hover:after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+
+.text-box h1{
+ font-size: 55px;
+}
+
+.text-box p{
+font: 14px;
+
+}
+
+.text-box a{
+    font-size: 14px;
+    text-decoration: none;
+    color:white;
+    display: inline-block;
+    padding: 8px 40px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    background: transparent;
+    transition: -6s;
+}
+.text-box a:hover{
+    background: #f1f111;
+    border: 1px solid #f1f111;
+}
+
+nav.fa-solid{
+    display: none;
+    margin: 10px;
+}
+
+.nav-links ul li{
+    display: block;
+
+}
+.nav-links ul {
+    padding: 20px;
+}
+
+
+.nav-links{
+    position: absolute;
+    height: 100vh;
+    width: 200px;
+    background:lightblue;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+}
+
+nav.fa-solid{
+    display: block;
+    color:black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 660px){
+    .text-box h1{
+        font-size: 32px;
+    }
+}
+    
